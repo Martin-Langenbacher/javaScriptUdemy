@@ -23,6 +23,21 @@ window.addEventListener("load", function(){
 
         let resultObj = document.getElementById("result");
         resultObj.innerText = ("" + result).replace(".", ",");
+
+
+        document.getElementById("weight-below").style.display = "none";
+        document.getElementById("weight-normal").style.display = "none";
+        document.getElementById("weight-above").style.display = "none";
+
+
+        if (bmi < 18.5){
+            document.getElementById("weight-below").style.display = "block";
+        } else if(bmi > 18.5 && bmi < 25) {
+            document.getElementById("weight-normal").style.display = "block";
+            // NaN: Not A Number: 
+        } else if (!isNaN(bmi)){
+            document.getElementById("weight-above").style.display = "block";
+        }
     };
 
     /*
