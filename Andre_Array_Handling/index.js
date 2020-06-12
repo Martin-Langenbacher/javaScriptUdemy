@@ -28,14 +28,10 @@ console.log("===================================================================
 
 
 console.log(" ");
+
+
 //Ergebnis-Eine-Zeile:
+console.log("Ergebnis-Eine-Zeile:");
+console.log( verdaechtige.filter( obj => obj.motive > 0 ).map( obj => { console.log( obj.name ); return obj.motive } ).reduce( ( sum, motive ) => sum + motive ) );
 
-console.log("Ergebnis-Eine-Zeile:\n" + 
-      "noch offen" + //verdaechtige.join.filter( obj => obj.motive > 0).forEach( obj => console.log( obj ) ) +
-//verdaechtige.filter( obj => obj.motive > 0).forEach( obj => console.log( obj ) ) +
-      "\nMotive-Gesamt: " +
-      verdaechtige.map( obj => obj.motive ).reduce ( ( sum, motive) => sum + motive ));
-
-
-
-
+console.log("============================================================================");

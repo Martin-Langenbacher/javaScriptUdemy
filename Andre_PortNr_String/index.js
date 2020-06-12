@@ -17,3 +17,6 @@ for (let i = 0; i < url.length; i++) {
 console.log("PortNr.: " + portnumber)
 
 
+
+let result2 = parseInt(url.split('/')[2].split(':')[1])
+console.log("PortNr.-Ergebnis 2: " + result2)
