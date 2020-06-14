@@ -5,7 +5,7 @@ function weiter(){
         spielstand++;
         let hervorheben = "feld" + (spielstand - 1);
         document.getElementById(hervorheben).style.background = "white";
-        if (spielstand == 2) {
+        if (spielstand == 10) {
             // Diese Zeile funktioniert nicht - es gibt sogar Probleme...
             //alert(decodeURI("Herzlichen Gl%C3BCckwunsch, Sie haben gewonnen!"));
             alert("Herzlichen Glückwunsch, Sie haben gewonnen!");
